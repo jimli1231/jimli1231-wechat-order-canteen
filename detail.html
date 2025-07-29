@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>订单详情</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        function goBack() {
+            history.back();
+        }
+    </script>
+</head>
+<body>
+    <header class="navbar">
+        <button class="back-btn" onclick="goBack()">←</button>
+        <span class="logo">美餐</span>
+    </header>
+
+    <main class="detail">
+        <h2 class="detail-title">周三 7-30 12:30</h2>
+        <h3 class="detail-subtitle">安克创新特色套餐午餐</h3>
+
+        <section class="order-section">
+            <h4>ORDER</h4>
+            <p>小炒黄牛肉套餐 1份</p>
+        </section>
+
+        <section class="payment-section">
+            <h4>你已支付</h4>
+            <p class="price">10.0</p>
+        </section>
+
+        <section class="pickup-section">
+            <p>你的餐品将会送到深圳一健兴科技大厦B座7楼前台</p>
+        </section>
+
+        <section class="timeline">
+            <p><time>23:46:19</time> 您已下单。</p>
+            <p><time>23:46:19</time> 您需要在2025-07-30 00:16之前在线完成订单支付，超时订单将会自动取消。</p>
+            <p><time>23:46:40</time> 使用安克创新账户支付了10元</p>
+        </section>
+
+        <button class="cancel-btn">取消订单</button>
+    </main>
+</body>
+</html> 

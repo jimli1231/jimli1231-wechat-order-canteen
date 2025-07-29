@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>美餐</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="navbar">
+        <span class="logo">美餐</span>
+    </header>
+
+    <section class="calendar">
+        <ul class="week">
+            <li>日<br><span>27</span></li>
+            <li>一<br><span>28</span></li>
+            <li>二<br><span>29</span></li>
+            <li class="active">三<br><span>30</span></li>
+            <li>四<br><span>31</span></li>
+            <li>五<br><span>1</span></li>
+            <li>六<br><span>2</span></li>
+        </ul>
+    </section>
+
+    <main class="order-list">
+        <div class="order-card" onclick="goDetail()">
+            <time class="order-time">12:30</time>
+            <h3 class="order-title">安克创新特色套餐午餐</h3>
+            <p class="order-summary">小炒黄牛肉套餐(小…水果&/安克专供)</p>
+            <span class="badge">已下单</span>
+        </div>
+    </main>
+
+    <script>
+        function goDetail() {
+            window.location.href = 'detail.html';
+        }
+    </script>
+</body>
+</html> 

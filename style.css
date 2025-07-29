@@ -1,0 +1,150 @@
+/* 全局变量 */
+:root {
+  --bg: #1e1e1e;
+  --bg-card: #333;
+  --text: #ffffff;
+  --subtext: #a0a0a0;
+  --highlight: #8cc63e;
+  --danger: #ff4d4f;
+}
+
+/* 通用 */
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.back-btn {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/* 日历部分 */
+.calendar {
+  background: #000;
+}
+.week {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 8px 12px;
+  list-style: none;
+  color: var(--text);
+  font-size: 14px;
+}
+.week li {
+  text-align: center;
+  opacity: 0.6;
+}
+.week li.active {
+  opacity: 1;
+  color: var(--highlight);
+}
+.week li span {
+  display: block;
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+/* 订单列表 */
+.order-list {
+  padding: 16px 12px;
+}
+.order-card {
+  position: relative;
+  background: var(--bg-card);
+  border-radius: 6px;
+  padding: 16px;
+  cursor: pointer;
+}
+.order-card + .order-card {
+  margin-top: 12px;
+}
+.order-time {
+  font-size: 24px;
+  color: var(--highlight);
+  font-weight: 700;
+}
+.order-title {
+  margin: 6px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.order-summary {
+  font-size: 14px;
+  color: var(--subtext);
+}
+.badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--highlight);
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* 详情页 */
+.detail {
+  padding: 16px 12px 60px;
+}
+.detail-title {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.detail-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.order-section, .payment-section, .pickup-section {
+  margin-bottom: 16px;
+}
+.order-section h4, .payment-section h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+.price {
+  font-size: 24px;
+  color: var(--highlight);
+  font-weight: 700;
+}
+.timeline {
+  margin-bottom: 24px;
+  font-size: 12px;
+  color: var(--subtext);
+}
+.timeline time {
+  color: var(--text);
+  margin-right: 4px;
+}
+.cancel-btn {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  background: var(--danger);
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+} 
